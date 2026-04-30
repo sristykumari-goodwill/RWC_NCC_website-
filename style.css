@@ -1,7 +1,13 @@
 body {
     margin: 0;
+    border-top: #2534d7 solid 20px ;
+    border-left: #2534d7 solid 5px;
+    border-right: #2534d7 solid 5px;
+    border-bottom: #2534d7 solid 5px;
     font-family: Arial, sans-serif;
 }
+     
+  
 
 /* Header */
 header {
@@ -9,16 +15,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #493ee7;
-    color: rgb(231, 208, 224);
+    background: #f5f4f8;
+    color: rgb(7, 7, 7);
     padding: 10px;
-    flex-wrap: wrap;
+    
     text-align: center;
 }
 
 .logoleft{
 
     margin-left: 20px;
+}
+.logoright{
+    margin-right: 40px;
 }
 header h1 {
     flex: 1;
@@ -48,7 +57,7 @@ nav {
 .nav-links {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 .nav-links a {
@@ -74,6 +83,20 @@ nav {
     display: none;
     font-size: 24px;
     cursor: pointer;
+}
+@media (max-width: 768px) {
+  nav {
+     display: none;
+     flex-direction: column ;
+     width: 100%;
+}
+nav.active{
+  display:flex;
+
+}
+    .menu-toggle {
+        display: block;
+    }
 }
 
 /* Content */

@@ -16,10 +16,6 @@ function showimg() {
 }
 showimg();
 
-function toggleMenu() {
-  document.querySelector(".nav-links").classList.toggle("active");
-}
-
 const links = document.querySelectorAll(".nav");
 
 links.forEach(link => {
@@ -27,4 +23,8 @@ links.forEach(link => {
     link.classList.add("active");
   }
 });
+function toggleMenu() {
+  let navLinks = document.querySelector(".nav-links");
+  navLinks.classList.toggle("active");
+}
 
