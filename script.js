@@ -19,10 +19,7 @@ showimg();
 function toggleMenu() {
   document.querySelector(".nav-links").classList.toggle("active");
 }
-// Example button interaction (future use)
-function showMessage() {
-    alert("Jai Hind! NCC Cadets are always ready!");
-}
+
 const links = document.querySelectorAll(".nav");
 
 links.forEach(link => {
